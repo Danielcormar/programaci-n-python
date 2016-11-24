@@ -1,4 +1,4 @@
-
+# -*- coding: <encoding name> -*-
 def suma(n):
     suma=(n*(n+1))/2
     print suma
