@@ -1,8 +1,8 @@
-# -*- coding: UTF-8 -*-
-def saldotot(saldoini):
-    saldo1=saldoini*1.04
-    saldo2=saldo1*1.04
-    saldo3=saldo2*1.04
-    print "saldo despues del primer año", saldo1
-    print "saldo despues del segundo año", saldo2
-    print "saldo despues del tercer año", saldo3
+#ejercicio 2
+#Daniel Corona Marin
+#26-nov-16
+n=input("distancia recorrida en km: ")
+banderazo=8.74
+km=7.36
+tarifa=km*n+banderazo
+print "pago ",tarifa
