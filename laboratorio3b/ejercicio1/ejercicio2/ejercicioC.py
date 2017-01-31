@@ -3,7 +3,7 @@ import math
 import matplotlib.pyplot as plt
 import numpy as np
 
-t=np.linspace(0,4*m3.1416,100)
+t=np.linspace(0,4*3.1416,100)
 f=np.sin(3*t)*np.cos(2*t)
 plt.plot(t,f,linewidth=2,color='black')
 
