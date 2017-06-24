@@ -1,0 +1,25 @@
+#!/bin/python
+
+import sys
+
+
+arr = []
+mayor=-1
+for arr_i in xrange(6):
+    arr_temp = map(int,raw_input().strip().split(' '))
+    arr.append(arr_temp)
+    
+for fila in range(len(arr)-2):
+    for numero in range(len(arr[fila])-2):
+        reloj=[]
+        #print arr[fila][numero:numero+3]
+        #print arr[fila+1][numero+1]
+        #print arr[fila+2][numero:numero+3]
+        reloj.append(sum(arr[fila][numero:numero+3]))
+        reloj.append(arr[fila+1][numero+1])
+        reloj.append(sum(arr[fila+2][numero:numero+3]))
+        if sum(reloj)>mayor:
+            mayor=sum(reloj)
+        else:
+            pass
+print mayor

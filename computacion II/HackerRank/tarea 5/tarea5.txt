@@ -1,0 +1,30 @@
+#!/bin/python
+
+import sys
+
+n = int(raw_input().strip())
+s = raw_input().strip()
+k = int(raw_input().strip())
+
+mensaje=''
+for i in s:
+    if i.islower():
+        restar=97
+        valor=ord(i)-restar
+        valor=valor+k
+        valor=valor%26
+        valor=valor+restar
+        letra=chr(valor)
+        mensaje=mensaje+letra
+    elif i.isupper():
+        restar=65
+        valor=ord(i)-restar
+        valor=valor+k
+        valor=valor%26
+        valor=valor+restar
+        letra=chr(valor)
+        mensaje=mensaje+letra
+    else:
+        mensaje=mensaje+i
+    
+print mensaje
